@@ -15,10 +15,10 @@
 
 $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 
-# Inherit some common RevengeOS stuff.
-IS_PHONE := true
-TARGET_GAPPS_ARCH := arm
-TARGET_MINIMAL_APPS := true
+# Disable built-in GApps
+BUILD_GAPPS := false
+
+# Boot Animation
 TARGET_BOOT_ANIMATION_RES := 720
 
 ## Device identifier. This must come after all inclusions
