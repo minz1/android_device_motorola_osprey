@@ -16,3 +16,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_osprey.mk
 
+COMMON_LUNCH_CHOICES := \
+    aosp_osprey-user \
+    aosp_osprey-userdebug \
+    aosp_osprey-eng
+
