@@ -16,13 +16,14 @@
 $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 
 # Boot animation
-TARGET_BOOTANIMATION_HALF_RES := true
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
+TARGET_BOOT_ANIMATION_RES := 720
+
+TARGET_GAPPS_ARCH := arm
+TARGET_MINIMAL_APPS := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
-PRODUCT_NAME := lineage_osprey
+PRODUCT_NAME := aosp_osprey
 PRODUCT_MODEL := MotoG3
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
